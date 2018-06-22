@@ -1,0 +1,32 @@
+/*css*/
+body{font-family:Verdana, Geneva, sans-serif}
+#thumbnail-slider {margin:0 auto;width:100%;max-width:900px;padding:0;box-sizing:border-box;position:relative;-webkit-user-select: none;user-select:none;}
+#thumbnail-slider div.inner {position:relative;overflow:hidden;padding:0;margin:0;}
+#thumbnail-slider div.inner ul {white-space:nowrap;position:relative;left:0; top:0;list-style:none;font-size:0;padding:0;margin:0;float:left!important;width:auto!important;height:auto!important;}
+#thumbnail-slider ul li {display:inline-block;margin-top:20px;margin-bottom:90px;margin-left:-0px; margin-right:-0px;-webkit-transition:-webkit-transform 0.5s;transition:transform 0.5s;box-sizing:content-box;text-align:center;vertical-align:middle;padding:0;position:relative;list-style:none;backface-visibility:hidden;}
+#thumbnail-slider ul li.active {-webkit-transform:scale(1.15); transform:scale(1.15);background-color:transparent;}
+#thumbnail-slider .thumb {width:100%;height:auto;background-size:contain;background-repeat:no-repeat;background-position:center center;display:block;position:absolute;font-size:0;cursor:inherit;transition:all linear 0.4s;}
+#thumbnail-slider .active .thumb {-webkit-transform: translateX(0px) translateZ(0px) rotateY(0deg); transform: translateX(0px) translateZ(0px) rotateY(0deg); }
+#thumbnail-slider-pause-play {display:none;}
+#thumbnail-slider-prev, #thumbnail-slider-next {top: 23%;display: block;position: absolute;width: 35px;height:80px;text-align: center;right: 0;background-image:url('../img/slim-arrow-sprite.png');background-repeat:no-repeat;opacity:0.8;cursor:pointer;}
+#thumbnail-slider-prev{left: 0;background-position:0px 0px;}
+#thumbnail-slider-next{right: 0;background-position:-35px 0px;}
+.product-gallery {text-align: center;}
+.product-gallery li{display: inline-block;margin: 10px 5px 0 5px;vertical-align: top;height: 250px !important;width: 380px !important;overflow: hidden;}
+.product-gallery > div {display: inline-block;margin: 10px 5px 0 5px;vertical-align: top;overflow: hidden;}
+.product-gallery iframe{border:0}
+.popup-overlay {background-color: rgba(0, 0, 0, 0.57);position: fixed;top: 0;left: 0;width: 100%;height: 100%;}
+.product-gallery-popup {position: fixed;top: 0;left: 0;width: 100%;height: 100%;display: none;z-index:2;}
+.product-gallery-popup .product-popup-content {position: absolute;width:90%;height: 80%;top: 10%;left: 5%;background-color: #fff;overflow: hidden;display: table;}
+.product-information,.product-image {float: left;}
+.product-information {width:30%;margin: 4% 1%;display: table-cell;float: none;padding: 20px 30px;}
+.product-image {width: 70%;height: 100%;overflow: hidden;position: relative;text-align: center;vertical-align: middle;display: table-cell;float: none;background: #171717;}
+.product-image img {width:auto;max-width:100%;max-height:83%;height:auto;}
+.cross {position: absolute;top: 10px;right: 10px; text-decoration:none; background:#F00; color:#FFF; height:30px; width:30px; border-radius:100%; line-height:30px; text-align:center;}
+.gallery-nav-btns{position: absolute;top: 50%;width: 100%;height: 40px;margin-top: -25px;}
+.gallery-nav-btns a{display: block;position: absolute;width: 35px;height:80px;text-align: center;right: 0;background-image:url('../img/slim-arrow-sprite.png');background-repeat:no-repeat;opacity:0.8;cursor:pointer;}
+.gallery-nav-btns a:hover{opacity:1;}
+.nav-btn.prev {left:0;background-position:0px 0px;}
+.nav-btn.next{right:0;background-position:-35px 0px;}
+#thumbnail-slider ul li.gallery-img{pointer-events: none;}
+#thumbnail-slider ul li.gallery-img.active{pointer-events:all;}
